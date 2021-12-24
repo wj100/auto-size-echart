@@ -10,8 +10,6 @@ git clone https://github.com/wj100/auto-size-echart.git
 
 yarn
 
-yarn build
-
 yarn dev
 ```
 ## 使用方法
