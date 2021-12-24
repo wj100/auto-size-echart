@@ -23,7 +23,7 @@ yarn dev
 ```bash
 yarn add auto-size-echart
 ```
-
+###  1. 使用
 ```js
 import AutoSizeEchart from 'auto-size-echart';
 //options对象的键对应容器id
