@@ -78,8 +78,11 @@ class AutoSizeEchart {
   init() {
     let ids = this._ids;
     for (let id of ids) {
-      console.log(ids);
-      this._charts[id] = echarts.init(document.getElementById(id));
+        const ele=document.getElementById(id)
+        if(!ele){
+           throw new Error('[auto size echart] element is not find by id '+id)
+        }
+      this._charts[id] = echarts.init(ele);
       this._charts[id].setOption(this.options()[id]);
     }
   }
