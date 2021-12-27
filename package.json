@@ -1,7 +1,7 @@
 {
   "name": "auto-size-echart",
-  "version": "1.1.0",
-  "description": "auto size echart",
+  "version": "1.1.1",
+  "description": "尺寸和字体随容器变化的echarts",
   "author": "wangjun <wj@wangjun.work>",
   "main": "dist/index.js",
   "license": "MIT",
@@ -18,10 +18,9 @@
     "vue": "^2.5.11"
   },
   "keywords": [
-    "auto",
-    "size",
+    "自适应",
     "echart"
-  ], 
+  ],
   "bugs": {
     "url": "https://github.com/wj100/auto-size-echart/issues"
   },
