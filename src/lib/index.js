@@ -19,7 +19,7 @@ class AutoSizeEchart {
   }
   /* 节流函数 */
   throttle(fn, delay) {
-    var timer = null;
+    let timer = null;
     return function() {
       var context = this,
         args = arguments;
@@ -53,7 +53,7 @@ class AutoSizeEchart {
       "bottom",
       "margin"
     ];
-    for (var i in s) {
+    for (let i in s) {
       if (typeof s[i] == "object") {
         this.changeFontSize(s[i]);
       } else {
