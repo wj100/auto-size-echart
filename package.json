@@ -1,21 +1,17 @@
 {
   "name": "auto-size-echart",
-  "version": "1.2.0",
+  "version": "1.3.2",
   "description": "尺寸和字体随容器变化的echarts",
   "author": "wangjun <wj@wangjun.work>",
   "main": "dist/index.js",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "rollup --config rollup.config.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/wj100/auto-size-echart.git"
-  },
-  "dependencies": {
-    "vue": "^2.5.11"
   },
   "keywords": [
     "自适应",
@@ -32,18 +28,11 @@
   ],
   "devDependencies": {
     "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-stage-3": "^6.24.1",
-    "cross-env": "^5.2.1",
-    "css-loader": "^0.28.7",
-    "less": "3.0.0",
-    "less-loader": "^4.1.0",
-    "prettier": "^1.12.1",
-    "vue-loader": "^13.0.5",
-    "vue-template-compiler": "^2.4.4",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.11.5",
-    "echarts": "^5.2.2"
+    "echarts": "^5.2.2",
+    "rollup": "^1.32.1",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-uglify": "^6.0.4"
   }
 }
